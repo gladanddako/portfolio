@@ -344,7 +344,7 @@ span.swiper-pagination-bullet-active {background: #fff;}
 
     .bestproduct01 li:last-child, .bestproduct02 li:last-child {display: block;}
     .bestproduct01, .bestproduct02 {flex-wrap: wrap;}
-    .bestproduct01 li, .bestproduct02 li {width: 43%; height: 100%;}
+    .bestproduct01 li, .bestproduct02 li {width: 45%; height: 100%;}
     .best_menu {aspect-ratio: 16 / 18.6;}
     .bestproduct01 li .bp_bg,.bestproduct02 li .bp_bg {padding-top: calc(100 / 100 * 100%);}
     
