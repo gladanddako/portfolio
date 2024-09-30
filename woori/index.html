@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+    <title>우리농산물마켓</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+    </style>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="./script/jquery-3.7.1.js"></script>
+    <script src="./script/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="container">
+                <div class="menu_a">
+                    <div class="input_cellbox">
+                        <strong>검색어를 입력하세요.</strong>
+                        <img src="./images/search.svg" alt="검색아이콘">
+                    </div>
+                    <h1 class="logo"><a href="#"><img src="./images/logo.svg" alt="우리농산물마켓 로고"></a></h1>
+                    <div class="mypage">
+                        <a href="#"><img src="./images/mypage.svg" alt="마이페이지 아이콘"></a>
+                        <a href="#" class="shoppin_icon"><img src="./images/shoppingbasket.svg" alt="장바구니"></a>
+                    </div>
+                </div>
+                <div class="menu_m">
+                    <a href="#" class="m_icon_01"><img src="./images/m_icon_01.svg" alt="햄버거 아이콘"></a>
+                    <a href="#"><img src="./images/m_icon_02.svg" alt="서치 아이콘"></a>
+                    <a href="#"><img src="./images/m_icon_03.svg" alt="홈버튼 아이콘"></a>
+                    <a href="#"><img src="./images/m_icon_04.svg" alt="장바구니 아이콘"></a>
+                    <a href="#"><img src="./images/m_icon_05.svg" alt="마이페이지 아이콘"></a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">베스트</a>
+                            <p class="under_line"></p>
+                        </li>
+                        <li>
+                            <a href="#">잡곡</a>
+                            <p class="under_line"></p>
+                        </li>
+                        <li>
+                            <a href="#">야채</a>    
+                            <p class="under_line"></p>
+                        </li>
+                        <li>
+                            <a href="#">과일</a>
+                            <p class="under_line"></p>
+                        </li>
+                        <li>
+                            <a href="#">전체 상품</a>
+                            <p class="under_line"></p>
+                        </li>
+                        <li>
+                            <a href="#">마켓 소개</a>
+                            <p class="under_line"></p>
+                        </li>
+                    </ul>
+                
+                </nav>
+            </div>
+        </header>
+        <header class="nav_m_wrap">
+            <nav class="nav_m">
+                    <h1 class="logo_m"><a href="#"><img src="./images/logo.svg" alt="우리농산물마켓 로고"></a></h1>
+                    <ul class="login_m">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                    <ul class="nav_menu_m">
+                        <li>
+                            <a href="#">잡곡</a>
+                        </li>
+                        <li>
+                            <a href="#">야채</a>    
+                        </li>
+                        <li>
+                            <a href="#">과일</a>
+                        </li>
+                        <li>
+                            <a href="#">전체 상품</a>
+                        </li>
+                    </ul>
+                    <div class="my_order"><a href="#" >내 주문 내역</a></div>
+                    <div class="customer_service"><a href="#">고객센터 <br> <strong>1234-5678</strong></a></div>
+                    <div class="close"><img src="./images/close_01.svg" alt="닫기버튼"></div>
+            </nav>
+        </header>
+        <div class="nav_m_wrap_bg"></div>
+        <main id="main">
+            <section id="slider">
+                <h2 class="blind">슬라이더 영역</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide s1">
+                        <a href="#">
+                            <strong>정성으로 기른 쌀이<br>
+                            밥상에 오르기 까지<br>
+                            <div class="line"></div>
+                            <span>특상 등급의 신동진 쌀 보러가기</span>
+                            </strong>
+                        </a>
+                      </div>
+                      <div class="swiper-slide s2">
+                        <a href="#">
+                            <strong>
+                                노화 방지에 좋고<br>
+                                상큼한 맛까지 좋은<br>
+                                <div class="line"></div>
+                            <span>퇴촌 벌수정 찰 토마토 보러가기</span>
+                            </strong>
+                        </a>
+                      </div>
+                      <div class="swiper-slide s3">
+                        <a href="#">
+                            <strong>
+                                나이 들수록<br>
+                                더 좋아지는<br>
+                                <div class="line"></div>
+                            <span>해남 늙은호박 보러가기</span>
+                            </strong>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>                    
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </section>
+            <section id="best">
+                <h2 class="blind">베스트상품 영역</h2>
+                <div class="container">
+                    <h3 class="best_name">베스트</h3>
+                    <div class="best_wrap">
+                        <div class="best_arrow_left">
+                            <a href="#" onClick="return false">
+                            <img src="./images/best_arrow_left.svg" alt="왼쪽으로 버튼"></a>
+                        </div>
+                        <div class="best_menu">
+                            <div class="best_menu_body">
+                                <ul class="bestproduct01">
+                                    <li class="bp_img1">
+                                        <a href="#" class="bp_bg"></a>
+                                        <a href="#" class="bp_font">
+                                            <span>
+                                                딱딱이 복숭아 로얄과 2kg<br>
+                                                <strong>34,900원</strong>
+                                            </span></a>
+                                    </li>
+                                    <li class="bp_img2">
+                                        <a href="#" class="bp_bg"></a>
+                                        <a href="#" class="bp_font">
+                                            <span>
+                                                세척 당근 1kg<br>
+                                                <strong>12,900원</strong>
+                                            </span></a>
+                                    </li>
+                                    <li class="bp_img3">
+                                        <a href="#" class="bp_bg"></a>
+                                        <a href="#" class="bp_font">
+                                            <span>
+                                                퇴촌 찰토마토 2kg<br>
+                                                <strong>25,000원</strong>
+                                            </span></a>
+                                    </li>
+                                    <li class="bp_img4">
+                                        <a href="#" class="bp_bg"></a>
+                                        <a href="#" class="bp_font">
+                                            <span>
+                                                수미 감자 1kg<br>
+                                                <strong>9,000원</strong>
+                                            </span></a>
+                                    </li>
+                                </ul>
+                                <ul class="bestproduct02">
+                                    <li class="bp_img5">
+                                        <a href="#" class="bp_bg"></a>
+                                        <a href="#" class="bp_font">
+                                            <span>
+                                                해남 늙은호박 2kg<br>
+                                                <strong>24,900원</strong>
+                                            </span></a>
+                                    </li>
+                                    <li class="bp_img6">
+                                        <a href="#" class="bp_bg"></a>
+                                        <a href="#" class="bp_font">
+                                            <span>
+                                                국내산 피망 1kg<br>
+                                                <strong>6,900원</strong>
+                                            </span></a>
+                                    </li>
+                                    <li class="bp_img7">
+                                        <a href="#" class="bp_bg"></a>
+                                        <a href="#" class="bp_font">
+                                            <span>
+                                                국내산 양파 2kg<br>
+                                                <strong>6,900원</strong>
+                                            </span></a>
+                                    </li>
+                                    <li class="bp_img8">
+                                        <a href="#" class="bp_bg"></a>
+                                        <a href="#" class="bp_font">
+                                            <span>
+                                                의성 햇마늘 1kg<br>
+                                                <strong>6,900원</strong>
+                                            </span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="best_arrow_right">
+                            <a href="#" onClick="return false"><img src="./images/best_arrow_right.svg" alt="오른쪽으로 버튼"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="banner">
+                <h2 class="blind">배너 영역</h2>
+                <div class="review_banner_bg">
+                    <div class="review_banner">
+                        <div class="review_banner_font">
+                            <a href="#"><strong>리뷰 혜택</strong><br><span>more<sup>+</sup></span></a>
+                        </div>
+                        <div class="review_box">
+                            <p class="reviewr">BEST REVIEWR</p>
+                            <p class="price">5,000원</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro_banner_bg">
+                    <div class="intro_banner">
+                        <div class="intro_box">
+                            <a href="#"><strong>소개</strong><br><span>more<sup>+</sup></span></a>
+                        </div>
+                        <div class="intro_banner_img">
+                            <img src="./images/logo.svg" alt="우리농산물마켓 로고">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="intro">
+                <h2 class="blind">인트로 영역</h2>
+                <div class="container">
+                    <div class="intro_img">
+                        <div class="img_box">
+                        </div>
+                    </div>
+                    <div class="intro_font">
+                        <h3>농장에서 바로 식탁으로</h3>
+                        <div class="intro_line"></div>
+                        <p>
+                            <strong>1.</strong>
+                            <span>상품은 좋지만 판매처가 정해지지 않아<br>
+                                어려움에 처한 농가를 살립니다.</span>
+                        </p>
+                        <p>
+                            <strong>2.</strong>
+                            <span>유통 마진을 포기하고 우리 농산물 마켓을<br>
+                                이용해주시는 분들께 신선한 농작물로<br>
+                                보답합니다.</span>
+                        </p>
+                        <p>
+                            <strong>3.</strong>
+                            <span>당일 수확한 제품을 바로 발송해 드립니다.<br>
+                                신선한 농작물로 바로 드세요!</span>
+                        </p>
+                        <div class="intro_line02"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="review">
+                <h2 class="blind">리뷰 영역</h2>
+                <div class="container">
+                    <ul class="review_list">
+                        <li>
+                            <div class="review_bg_wrap">
+                                <a href="#" class="review_bg"></a>
+                            </div>
+                            <a href="#" class="review_font">
+                                <div class="review_star">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="review_font_box">
+                                    <strong>혹시나 해서 여러가지 다
+                                        시켜봤는데 싱싱해요!! 너무 좋습니다.</strong>
+                                    <span class="date">2024. 05. 29</span>
+                                </div>
+                                <div class="review_menu">
+                                    <div class="review_img"></div>
+                                    <div class="review_menu_font">
+                                        <span>수미 감자 1kg</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="review_bg_wrap">
+                                <a href="#" class="review_bg review_bg02"></a>
+                            </div>
+                            <a href="#" class="review_font">
+                                <div class="review_star">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="review_font_box">
+                                    <strong>다이어트 중에 야채먹어야
+                                        되는데 맛있어서 덜 괴로워요! 앞으로 종종 사먹어야겠어요!</strong>
+                                    <span class="date">2024. 06. 13</span>
+                                </div>
+                                <div class="review_menu">
+                                    <div class="review_img review_img02"></div>
+                                    <div class="review_menu_font">
+                                        <span>퇴촌 찰토마토 2kg</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="review_bg_wrap">
+                                <a href="#" class="review_bg review_bg03"></a>
+                            </div>
+                            <a href="#" class="review_font">
+                                <div class="review_star">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="review_font_box">
+                                    <strong>토마토 너무 신선해요!
+                                        박스로 사놓아도 오래 먹을 것 같아요!</strong>
+                                    <span class="date">2024. 06. 15</span>
+                                </div>
+                                <div class="review_menu">
+                                    <div class="review_img review_img03"></div>
+                                    <div class="review_menu_font">
+                                        <span>퇴촌 찰토마토 4kg</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="review_bg_wrap">
+                                <a href="#" class="review_bg review_bg04"></a>
+                            </div>
+                            <a href="#" class="review_font">
+                                <div class="review_star">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="review_font_box">
+                                    <strong>브로콜리 아주 탱글탱글합니다!! 맛나게 먹겠어요!!</strong>
+                                <span class="date">2024. 07. 04</span>
+                                </div>
+                                <div class="review_menu">
+                                    <div class="review_img review_img04"></div>
+                                    <div class="review_menu_font">
+                                        <span>브로콜리 1kg</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="delivery_banner">
+                <h2 class="blind">배달관련 배너 영역</h2>
+                <div class="container">
+                    <div class="delivery_font">
+                        <a href="#"><strong>배송 관련</strong><br><span>more<sup>+</sup></span></a>
+                    </div>
+                    <div class="delivery_box">
+                        <p class="delivery_font2">당일 수확 제품으로 <strong>구매 후 2~3일이후 발송됩니다.</strong></p>
+                        <p class="delivery_font3">수확 후 한진택배로 배송됩니다. 꼭 확인 후 구매해주세요! </p>
+                    </div>
+                    <div class="delivery_icon">
+                        <img src="./images/delivery_icon.svg" alt="배달 아이콘">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="footer1">
+                    <h4 class="f_title">우리농산물마켓</h4>
+                    <p class="f_body">
+                        대표자명 : 한땡땡 <br>
+                        사업자번호 : 128-89-00000 <br>
+                        주소 : 경기도 광주시 <br>
+                        전화번호 : 1234-5678 <br>
+                        이메일 : woorifarm@naver.com <br>
+                        <br>
+                        ⓒ woorifarm. All rights reserved
+                    </p>
+                </div>
+                <div class="footer2">
+                    <div class="footer2_1">
+                        <h4 class="f_title">고객센터</h4>
+                        <p class="f_number">1234-5678</p>
+                        <p class="f_body">
+                            평일 오전 9시~ 오후 6시 <br> 점심 시간 오후 12시~ 1시 <br>
+                            토요일 / 일요일 / 공휴일 휴무
+                        </p>
+                    </div>
+                    <div class="footer2_2">
+                        <h4 class="f_title">입금 계좌</h4>
+                        <p class="f_body">
+                            기업 은행 : 123-45-678910 <br>
+                            예금주 : 우리농산물마켓
+                        </p>
+                    </div>
+                </div>
+                <div class="footer3">
+                    <div class="footer3_1">
+                        <h4 class="f_title">반품 공지</h4>
+                        <p class="f_body">
+                            반품/교환 시 반드시 고객센터와 통화 후, 접수해 주셔야 합니다. <br>
+                            반품 접수 없이 임의로 상품을 반송했을 경우 환불이 불가합니다.
+                        </p>
+                    </div>
+                    <div class="footer3_2">
+                        <ul>
+                            <li><a href="#"><img src="./images/link01.svg" alt="링크아이콘1"></a></li>
+                            <li><a href="#"><img src="./images/link02.svg" alt="링크아이콘2"></a></li>
+                            <li><a href="#"><img src="./images/link03.svg" alt="링크아이콘3"></a></li>
+                            <li><a href="#"><img src="./images/link04.svg" alt="링크아이콘4"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+
+
+
+</body>
+</html>
