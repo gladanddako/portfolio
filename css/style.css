@@ -94,9 +94,6 @@ body {color: #fff;
 
 
 /* 인트로 */
-.intro_img {position: absolute; top: 0; left: 0; width: 0; height: 0; 
-    overflow: hidden; text-indent: -9999px;;}
-
 
 .intro_title_wrap {position: absolute; top: 50%; left: 50%;
     transform: translate(-50%,-50%);
@@ -114,7 +111,7 @@ body {color: #fff;
     border-radius: 50%; cursor: pointer;}
 
 .icon_right {position: absolute; top: 73%; left: 76%; transform: translateX(-50%);}
-.icon_right img {width: 30%;}
+.icon_right img {width: 42%;}
 
 
 /* 프로필 */
