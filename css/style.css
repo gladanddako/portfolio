@@ -94,6 +94,10 @@ body {color: #fff;
 
 
 /* 인트로 */
+.intro_img {position: absolute; top: 0; left: 0; width: 0; height: 0; 
+    overflow: hidden; text-indent: -9999px;;}
+
+
 .intro_title_wrap {position: absolute; top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     background: #fdead8; width: 25%; padding-bottom: 3%;}
