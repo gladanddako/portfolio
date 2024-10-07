@@ -37,7 +37,7 @@ h1, h2, h3, h4, p, strong, span {font-family: "Pretendard Variable";}
 
 /* 메뉴 로고 */
 .menu_m {display: none;}
-.menu_a {width: 100%; height: 108px; display: flex;
+.menu_a {width: 100%; height: 10.8rem; display: flex;
     justify-content: space-between; align-items: center;
     padding-top: 1rem; box-sizing: border-box; position: relative;}
 .logo a {display: block; width: 100%; height: 100%;}
@@ -78,7 +78,7 @@ h1, h2, h3, h4, p, strong, span {font-family: "Pretendard Variable";}
 
 .swiper-slide a {width: 100%; height: 100%; display: block; position: relative; z-index: 101;}
 .swiper-slide a strong {position: absolute; top: 54%; left: 50%; text-align: center;
-    color: #fff; font-size: 3.2rem; font-weight: 600; line-height: 1.4;
+    color: #fff; font-size: 3.2rem; font-weight: 600; line-height: 1.4; white-space: nowrap;
     transform: translate(-50%,-50%); text-shadow: 0px 0px 0.6rem rgb(0,0,0,0.8);}
 .swiper-slide a strong .line::after {content: ''; display: block; width: 16rem; height: 0.2rem;
     background-color: #fff; margin: 1rem 0; 
@@ -191,7 +191,7 @@ span.swiper-pagination-bullet-active {background: #fff;}
 /* 리뷰 */
 #review .container {padding-top: 10rem; width: 100%; /* height: 100%; */ /* box-sizing: border-box; */}
 .review_list {display: flex; justify-content: space-between;  padding-bottom: 10rem;}
-.review_list > li {width: 22%; border-radius: 10px;  border: 1px solid #969696;}
+.review_list > li {width: 22%; border-radius: 10px;  border: 1px solid rgba(0,0,0,.2);}
 .review_list > li > .review_bg_wrap {height: calc(100vh - 75rem); min-height: 18rem; max-height: 28rem;
     width: 100%; display: block; border-radius: 8px 8px 0 0; overflow: hidden;}
 .review_list > li .review_bg {width: 100%; height: 100%; display: block;
@@ -261,7 +261,6 @@ span.swiper-pagination-bullet-active {background: #fff;}
 }
 
 @media screen and (max-width:1023px){
-   
     html {font-size: 55%}
     .container {width: 100%;}
     #slider {min-height: 40rem; max-height: 55rem;}
@@ -269,11 +268,13 @@ span.swiper-pagination-bullet-active {background: #fff;}
 
     /* 슬라이드 메뉴 */
     #header {position: static; height: 13rem;}
+    .menu_a {height: 13rem;}
     .input_cellbox, .mypage, .nav {display: none;}
+    #header .container {position: relative;}
     .logo img {content: url(../images/logo_1.svg);}
     .swiper-slide a strong {position: absolute; top: 40%;
         font-size: 3rem;}
-    #best .container {padding-top: 7rem; height: auto;}
+    #best .container {padding-top: 7rem; height: auto; padding-bottom: 5rem;}
     .bestproduct01 li:last-child, .bestproduct02 li:last-child {display: none;}
     .bestproduct01 li, .bestproduct02 li {width: 30%;}
 
@@ -288,15 +289,15 @@ span.swiper-pagination-bullet-active {background: #fff;}
     .review_list li {width: 30%;}
 
     .bestproduct01 li .bp_bg,.bestproduct02 li .bp_bg {padding-top: calc(105 / 100 * 100%);} 
-    .best_menu {aspect-ratio: 16 / 7;}
+    .best_menu {aspect-ratio: 16 / 6.7;}
 
     /* 모바일메뉴 */
-    .menu_m {position: fixed; bottom: 0; left: 0; width: 100%; height: 11rem;
+    .menu_m {position: fixed; bottom: 0; left: 0; width: 100%; height: 6rem;
         z-index: 105; background: #fff; display: flex; 
         justify-content: space-around; align-items: center;
-        border-top: 1px solid #969696;}
+        border-top: 1px solid rgba(0,0,0,.2)}
     .menu_m a {display: block;}
-    .menu_m a img {height: 4.2rem;}
+    .menu_m a img {height: 2.6rem;}
     
     .nav_m_wrap {display: block; position: fixed; top: 0; left: 0;
         width: 70%; height: 100%; background: #fff; z-index: 200;}
@@ -306,16 +307,17 @@ span.swiper-pagination-bullet-active {background: #fff;}
 
     .nav_menu_m {position: relative;}
     .logo_m {width: 35%; height: 35%; margin: 0 auto; margin-top: 5rem; 
-        max-width: 16rem;}
+        max-width: 12rem;}
     .logo_m img {content: url(../images/logo_1.svg);}
     .login_m {display: flex; justify-content: center; gap: 5%; padding: 3rem 0 2rem 0;
         border-bottom: 1px solid #969696;}
     .login_m li a {font-size: 1.6rem;}
     .nav_menu_m {padding: 2rem 15%; border-bottom: 1px solid #969696;}
-    .nav_menu_m li a {display: block; font-size: 3rem; line-height: 8rem;;
+    .nav_menu_m li a {display: block; font-size: 2.6rem; line-height: 8rem;;
         font-weight: 600;}
     .nav_menu_m li:hover a {color: #008250;}
     .my_order {border-bottom: 1px solid #969696; width: 100%; padding: 2rem 0 8rem 0;}
+
     .customer_service {padding-top: 2rem;}
     .my_order a,.customer_service a {display: block; font-size: 2rem; padding-left: 15%;}
     .customer_service a strong { font-size: 2.4rem;}
@@ -327,11 +329,16 @@ span.swiper-pagination-bullet-active {background: #fff;}
     .nav_m_wrap, .nav_m_wrap_bg {display: none;}
 
 
-    #footer .container {padding-bottom: 14rem;}
+    #footer .container {padding-bottom: 8rem;}
     
  }
 
  @media screen and  (max-width:743px){
+    .menu_m {height: 6rem;}
+    .menu_m a img {height: 2.4rem;}
+    #header {position: static; height: 9rem;}
+    .menu_a {height: 9rem;}
+    .logo a img {height: 6rem;}
     #slider {max-height: 50rem;}
     html {font-size: 50%}
     #slider .swiper-button-next, #slider .swiper-button-prev {display: none;}
@@ -345,7 +352,9 @@ span.swiper-pagination-bullet-active {background: #fff;}
     .bestproduct01 li:last-child, .bestproduct02 li:last-child {display: block;}
     .bestproduct01, .bestproduct02 {flex-wrap: wrap;}
     .bestproduct01 li, .bestproduct02 li {width: 45%; height: 100%;}
-    .best_menu {aspect-ratio: 16 / 18.6;}
+    .bestproduct01 .bp_img1,.bestproduct01 .bp_img1, .bestproduct02 .bp_img5, .bestproduct02 .bp_img5
+    {margin-bottom: 2rem;}
+    .best_menu {aspect-ratio: 16 / 19;}
     .bestproduct01 li .bp_bg,.bestproduct02 li .bp_bg {padding-top: calc(100 / 100 * 100%);}
     
 
@@ -364,7 +373,7 @@ span.swiper-pagination-bullet-active {background: #fff;}
     .intro_font {width: 80%; right: 8%;}
     .intro_font .intro_line::after, .intro_font .intro_line02::after {background-color: #fff;}
     .intro_font h3, .intro_font p {color: #fff;}
-    #delivery_banner {height: 22rem; width: 100%;}
+    #delivery_banner {height: 21rem; width: 100%;}
     #delivery_banner .container {display: block;}
     .delivery_font {padding-top: 3rem;}
     .delivery_box {padding: 2rem 5rem;}
@@ -373,11 +382,11 @@ span.swiper-pagination-bullet-active {background: #fff;}
     .delivery_icon {position: absolute; top: -20%; right: 0;}
     .delivery_icon img {height: 25%;}
     
-    #footer .container {display: block; padding-bottom: 12rem;}
+    #footer .container {display: block; padding-bottom: 6rem;}
     #footer .container > div {width: 100%;}
     .footer1, .footer2_1, .footer2_2, .footer3_1 {padding-bottom: 5rem;}
     .footer3_2 ul {width: 70%;}
-    .footer3_2 ul li img {width: 7rem; height: 7rem;}
+    .footer3_2 ul li img {width: 6rem; height: 6rem;}
 
     .delivery_font2 {font-size: 2.2rem;}
     .delivery_font3 {font-size: 1.6rem;}
@@ -386,16 +395,51 @@ span.swiper-pagination-bullet-active {background: #fff;}
 
  }
 
- @media screen and (max-width:480px) {
-    .best_menu {padding-bottom: 5rem;}
+ @media screen and (max-width:490px) {
+    .nav_menu_m li a {font-size: 2.2rem;}
+    .best_menu {padding-bottom: 5rem; }
+    .best_name {font-size: 3rem; height: 6rem;}
+    .review_banner_font a strong, .delivery_font a strong {font-size: 2.6rem;}
+    .bp_font span {font-size: 1.6rem;}
+    .bp_font strong {font-size: 1.8rem; line-height: 2.8rem;}
+    .review_font strong {font-size: 1.4rem;}
+    .review_menu_font span {font-size: 1.4rem;}
+    .review_font .date {font-size: 1.2rem; padding: 0.5rem 0;}
+    .star {width: 2.6rem; height: 2.6rem;}
     .intro_font h3 {font-size: 3.4rem;}
     .intro_font p {font-size: 1.6rem;}
     .delivery_font2 {font-size: 1.7rem;}
     .delivery_font3 {font-size: 1.5rem;}
     #delivery_banner {height: 20rem; width: 100%;}
-    
+    #best .container {padding-bottom: 5.5rem;}
+    .review_list > li {margin-bottom: 4rem;}
+    .review_list > li > .review_bg_wrap {height: calc(100vh - 90rem); min-height: 16rem; 
+        width: 100%; display: block; border-radius: 8px 8px 0 0; overflow: hidden;}
+    .review_list > li > .review_font {max-height: 18.2rem; width: 100%; display: block; padding: 0.8rem; box-sizing: border-box;}
+    .review_box {margin-right: 8%;}
+    .delivery_box {padding: 2rem 4rem;}
+    .review_banner_font, .delivery_font {padding-left: 4rem;}
+    .intro_banner_img, .delivery_icon {padding-right: 4rem;}
+    #delivery_banner {height: 19rem;}
     
  }
 
+ @media screen and (max-width:374px) {
+    html {font-size: 45%}
+    .bestproduct01 .bp_img1,.bestproduct01 .bp_img1, .bestproduct02 .bp_img5, .bestproduct02 .bp_img5
+    {margin-bottom: 1rem;}
+    .intro_font h3 {font-size: 2.8rem; margin-bottom: 1.5rem;}
+    .intro_font p {font-size: 1.4rem;}
+    #intro .container {max-height: 50rem;}
+    #main #intro {max-height: 50rem;}
+    .review_banner_font, .delivery_font {padding-left: 3rem;}
+    .intro_banner_img, .delivery_icon {padding-right: 3rem;}
+    .review_box {margin-right: 6%;}
+    .delivery_box {padding: 2rem 3rem;}
+    .review_banner_font, .delivery_font {padding-left: 3rem;}
+    .intro_banner_img, .delivery_icon {padding-right: 3rem;}
+    .delivery_font2 {font-size: 1.6rem;}
+    .delivery_font3 {font-size: 1.4rem;}
+ }
 
 
