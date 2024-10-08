@@ -56,62 +56,6 @@ $(function(){
         ease:'power1.in',
     })
 
-    
-    const t3 = gsap.timeline({
-        scrollTrigger:{
-            trigger:".profile",//시작점 설정
-            markers:false,
-        }
-    });
-
-    t3.from(".profile_picture, .profile_cont ,.education",{
-        y:30,
-        opacity:1,
-        duration:0.5,
-        ease:'ease in',
-        
-    })
-
-    t3.from(".career",{
-        y:30,
-        opacity:1,
-        duration:0.7,
-        ease:'ease in',
-        
-    })
-
-    t3.from(".skill, .license, .keyword",{
-        y:30,
-        opacity:1,
-        duration:1,
-        ease:'ease in',
-        
-    })
-
-
-    
-    
-    
-
-    
-
-
-
-    /* $('#parallax__title, #parallax__nav').hide()
-    $(window).scroll(function(){
-    let scrollTop = $(window).scrollTop()
-    console.log(scrollTop)
-        if(scrollTop <= 700){
-            $('#parallax__title, #parallax__nav').slideUp(200)
-        }else{ 
-            $('#parallax__title, #parallax__nav').slideDown(200)
-        }
-    })
-
-    $('#parallax__title').click(function(){
-        $('html, body').animate({scrollTop:0},400);
-        return false;
-    }); */
 
 
     
@@ -147,16 +91,6 @@ $(function(){
     });
     
 
-
-
-    
-
-    /*  document.querySelectorAll(".intro_title").forEach(text=>{
-         let splitWrap = text.innerText.split("").join("</h2><h2 aria-hidden='true'>")
-         text.innerHTML = "<h2 aria-hidden='true'>"+ splitWrap +"</h2>"
-         text.setAttribute("aria-label",text.innerText)
-     })
- */
     
      const targets = gsap.utils.toArray(".intro_title")
 
@@ -242,7 +176,34 @@ $(function(){
 
       $("#section4 .swiper-slide a").colorbox()
       // https://www.jacklmoore.com/colorbox/ 참고
+    
 
+
+
+      //프로필 애니메이션
+      function getSectionHeight2() {
+        return ($('Section').outerHeight() - $(window).height() / 1.8) ; // 또는 .height()를 사용해도 됩니다
+    }
+    $(window).scroll(function() {
+        let scrollTop2 = $(window).scrollTop();
+        let sectionHeight2 = getSectionHeight2();
+
+        if(scrollTop2 >= sectionHeight2){ 
+            $('.profile_picture, .profile_cont ,.education').show()
+        }else{
+            $('.profile_picture, .profile_cont ,.education').fadeOut()
+        }
+        if(scrollTop2 >= sectionHeight2){ 
+            $('.career').show()
+        }else{
+            $('.career').fadeOut()
+        }
+        if(scrollTop2 >= sectionHeight2){ 
+            $('.skill, .license, .keyword').show()
+        }else{
+            $('.skill, .license, .keyword').fadeOut()
+        }
+    })
 
 
 })
