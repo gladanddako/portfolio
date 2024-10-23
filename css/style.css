@@ -12,8 +12,6 @@ ul, li {list-style: none;}
 
 
 
-
-
 body {color: #fff;
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
@@ -109,6 +107,7 @@ body {color: #fff;
 .intro_btn {width: 2.4vw; position: absolute; bottom: 15px; right: 25px;
     /* transform: translate(-50%,-50%); */
     border-radius: 50%; cursor: pointer;}
+
 
 .icon_right {position: absolute; top: 73%; left: 76%; transform: translateX(-50%);}
 .icon_right img {width: 42%;}

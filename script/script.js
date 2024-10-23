@@ -34,6 +34,15 @@ $(function(){
             link.classList.add('active')
         }
 
+        
+        $('.intro_btn a,#parallax__title').click(function (e) {               //링크를 클릭하면 실행
+            $.scrollTo(this.hash || 0, 800);	// 해시(#eu, #us, ...)가 있는 위치로 스크롤
+            e.preventDefault();             // a 링크를 통해 이동하거나 창이 새로고침 되는것을 방지.
+        });
+        
+
+
+
     /* 인트로 애니메이션 */
     
     const t2 = gsap.timeline({
@@ -77,19 +86,6 @@ $(function(){
             $('#parallax__title, #parallax__nav').slideDown(200);
         }
     });
-
-    $('#parallax__title').click(function() {
-        $('html, body').animate({ scrollTop: 0 }, 400);
-        return false;
-    });
-
-    $('.intro_btn').click(function() {
-        // ID가 "section3"인 섹션으로 스크롤
-        $('html, body').animate({
-            scrollTop: $('#section2').offset().top
-        }, 400);
-    });
-    
 
     
      const targets = gsap.utils.toArray(".intro_title")
