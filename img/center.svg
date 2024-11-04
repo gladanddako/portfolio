@@ -1,4 +1,10 @@
-<svg width="324" height="372" viewBox="0 0 324 372" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="162" cy="162" r="162" fill="#77C2EE"/>
-<path d="M146.627 371.512L120.487 283.313L186.535 295.882L146.627 371.512Z" fill="#77C2EE"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 324 372" style="enable-background:new 0 0 324 372;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#77C2EE;}
+</style>
+<circle class="st0" cx="162" cy="162" r="162"/>
+<path class="st0" d="M146.6,372l-26.1-88.2l66,12.6L146.6,372z"/>
 </svg>

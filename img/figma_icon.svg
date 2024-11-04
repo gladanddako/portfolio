@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 25.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 27.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 57.65 86.48" style="enable-background:new 0 0 57.65 86.48;" xml:space="preserve">
+	 viewBox="0 0 44 66" style="enable-background:new 0 0 44 66;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#00B6FF;}
 	.st1{fill:#FF3737;}
@@ -9,10 +9,11 @@
 	.st3{fill:#24CB71;}
 	.st4{fill:#FF7237;}
 </style>
-<circle class="st0" cx="39.73" cy="43.21" r="10.88"/>
-<path class="st1" d="M17.95,10.61c-6.01,0-10.88,4.87-10.88,10.88c0,6.01,4.87,10.88,10.88,10.88h10.88V10.61H17.95z"/>
-<path class="st2" d="M17.95,32.36c-6.01,0-10.88,4.87-10.88,10.88s4.87,10.88,10.88,10.88h10.88V32.36H17.95z"/>
-<path class="st3" d="M17.95,54.12c-6.01,0-10.88,4.87-10.88,10.88c0,6.01,4.87,10.88,10.88,10.88c6.01,0,10.88-4.87,10.88-10.88
-	V54.12H17.95z"/>
-<path class="st4" d="M39.71,10.61H28.83v21.75h10.88c6.01,0,10.88-4.87,10.88-10.88C50.58,15.48,45.71,10.61,39.71,10.61z"/>
+<g>
+	<ellipse class="st0" cx="33" cy="33" rx="11" ry="11"/>
+	<path class="st1" d="M11,0C4.9,0,0,4.9,0,11s4.9,11,11,11h11V0H11z"/>
+	<path class="st2" d="M11,22C4.9,22,0,26.9,0,33s4.9,11,11,11h11V22H11z"/>
+	<path class="st3" d="M11,44C4.9,44,0,48.9,0,55s4.9,11,11,11s11-4.9,11-11V44H11z"/>
+	<path class="st4" d="M33,0H22v22h11c6.1,0,11-4.9,11-11C44,4.9,39,0,33,0z"/>
+</g>
 </svg>
